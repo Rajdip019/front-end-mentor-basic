@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Outfit", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
+  
+    /* Background image properties */
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+    background-size: contain;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    width: 22.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  }
+  
+  .main {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  
+  .image img {
+    width: 22.5rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    /* border-top-left-radius: 1.25rem;
+      border-top-right-radius: 1.25rem; */
+  }
+  
+  .text {
+    font-family: "Red Hat Display";
+    font-style: normal;
+    text-align: center;
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  
+  .text h1 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    /* identical to box height */
+  
+    color: #1f2e55;
+  }
+  
+  .text h3 {
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    /* or 162% */
+  
+    color: #717fa6;
+    margin-top: 0.8rem;
+  }
+  
+  .pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f9ff;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+  }
+  
+  
+  
+  .pricing-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pricing-left-text-Annual {
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.8rem;
+    line-height: 1.05rem;
+  
+    color: #1f2e55;
+  }
+  
+  .pricing-left-text-price {
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.05rem;
+    margin-top: 0.3rem;
+  
+    color: #717fa6;
+  }
+  
+  .pricing-left-image img {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 1rem;
+  }
+  
+  .pricing-right {
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    /* identical to box height */
+  
+    text-decoration-line: underline;
+  
+    color: #382ae1;
+  }
+  
+  .submit-button button {
+    background: #382ae1;
+    box-shadow: 0rem 1rem 1rempx rgba(56, 42, 225, 0.190291);
+    border-radius: 0.5rem;
+    color: #fff;
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    /* identical to box height */
+    color: #ffffff;
+    height: 2.5rem;
+    width: 100%;
+    margin: 1.5rem 0 1.5rem 0;
+    background: #382ae1;
+    box-shadow: 0rem 1rem 1rem rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    all: unset;
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    /* identical to box height */
+  
+    color: #717fa6;
+    
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    cursor:not-allowed;
+  }
+  
+  .submit-button button:hover {
+      background-color: #766CF1;
+      
+  }
+  
+  .pricing-right a {
+      color: blue;
+  }
+  
+  .pricing-right a:hover {
+      color: #766CF1;
+  }
+  
+  @media screen and (max-width: 600px){
+      .main {
+          padding: 0 1.5rem 0 1.5rem;
+        }
+  
+        .card {
+          width: 16.3rem;
+        }
+  
+        .image img {
+          width: 16.3rem;
+        }
+  
+       
+  }
