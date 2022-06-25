@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0a0c1c;
+    font-family: "Inter", "Lexend Deca", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    background-color: #1b1937;
+    width: 57rem;
+    height: 22.5rem;
+    border-radius: 0.3rem;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .content-text {
+    padding: 3rem 3rem 3rem 3rem;
+    margin-right: 4rem;
+  }
+  
+  .content-image {
+    background-image: url("./images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 22.5rem;
+    width: 62.5rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    background-color: #ab5cdb;
+    background-blend-mode: multiply;
+    opacity: 0.75;
+  }
+  
+  .content-text h1 {
+    color: #ffffff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  
+  .content-text span {
+    color: #ab5cdb;
+  }
+  
+  .content-text p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin-top: 1.25rem;
+  }
+  
+  .stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3.7rem;
+  }
+  .stats-num h5 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+    color: #ffffff;
+    mix-blend-mode: none;
+    opacity: 1;
+  }
+  
+  .stats-num p {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 16.3rem;
+      height: auto;
+    }
+  
+    .container {
+      flex-direction: column-reverse;
+    }
+  
+    .content-text {
+      text-align: center;
+      padding: 2rem 1rem 2rem 1rem;
+      margin-right: 0;
+    }
+  
+    .content-image {
+      background-image: url("./images/image-header-mobile.jpg");
+      width: 16.3rem;
+      height: 12rem;
+      border-radius: 0.3rem 0.3rem 0 0;
+    }
+  
+    .content-text h1 {
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+    }
+  
+    .stats {
+      flex-direction: column;
+      height: 11rem;
+      margin-top: 2.5rem;
+    }
+  }
