@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Big Shoulders Display", cursive, "Lexend Deca", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 1.2rem 2.3rem 2.3rem 2.3rem;
+    width: 17.3rem;
+  }
+  
+  .sedan {
+    background: #e28625;
+    border-radius: 0.4rem 0 0 0.4rem;
+  }
+  
+  .suv {
+    background: #006971;
+    
+  }
+  
+  .luxury {
+    background: #004140;
+    
+  }
+  .category img {
+    margin-top: 2.3rem;
+  }
+  
+  .main-text {
+    color: #fff;
+  }
+  .main-text h1 {
+    margin-top: 1.75rem;
+    font-family: "Big Shoulders Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4;
+    /* identical to box height */
+  
+    text-transform: uppercase;
+  }
+  
+  .main-text p {
+    margin-top: 1.25rem;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    /* or 167% */
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+  
+  button {
+    margin-top: 3.5rem;
+    background: #f2f2f2;
+    border-radius: 1.25rem;
+    border: 0;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    /* identical to box height, or 167% */
+    border: 2px solid transparent;
+  }
+  
+  .sedan-btn,
+  .suv-btn,
+  .luxury-btn {
+    padding: 0.7rem 1.7rem 0.8rem 1.7rem;
+  }
+  
+   .sedan-btn:hover,
+  .suv-btn:hover,
+  .luxury-btn:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  
+  .sedan-btn {
+    color: #e28625;
+    /* border: 2px solid #e28625; */
+  }
+  
+  .suv-btn {
+    color: #006971;
+    /* border: 2px solid #006971; */
+  }
+  
+  .luxury-btn {
+    color: #004140;
+    /* border: 2px solid #004140; */
+    /* border: 2px solid transparent; */
+  }
+  
+  .end-cat{
+      width: 0.5rem;
+      border-radius: 0 0.4rem 0.4rem 0;
+      background-color: #e28625;
+  }
