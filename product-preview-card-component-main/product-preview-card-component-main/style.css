@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Fraunces", serif, "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "leftImage rightContent";
+  }
+  
+  .left-image {
+    grid-area: leftImage;
+    background-image: url("images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  
+  .right-content {
+    grid-area: rightContent;
+    background-color: #fff;
+    padding: 1.56rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  
+  .light-heading {
+    /* Overline */
+  
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    /* identical to box height */
+  
+    letter-spacing: 0.3rem;
+  
+    /* Aurometal Saurus */
+  
+    color: #6c7289;
+  }
+  
+  .attn-heading {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.56rem;
+    line-height: 1.56rem;
+    margin-top: 1rem;
+    /* or 100% */
+  
+    /* Gunmetal */
+  
+    color: #1c232b;
+  }
+  
+  .center-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6rem;
+    line-height: 1.15rem;
+    margin-top: 1.2rem;
+    /* or 164% */
+  
+    /* Aurometal Saurus */
+  
+    color: #6c7289;
+  }
+  
+  .pricing {
+    display: flex;
+    align-items: center;
+    margin-top: 1.45rem;
+  }
+  
+  .after-dis {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.56rem;
+    line-height: 1.56rem;
+    /* identical to box height, or 100% */
+  
+    /* Deep Aquamarine */
+  
+    color: #3d8168;
+  }
+  
+  .before-dis {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6rem;
+    line-height: 1.15rem;
+    margin-left: 1.2rem;
+    /* identical to box height, or 177% */
+  
+    text-decoration-line: line-through;
+  
+    /* Aurometal Saurus */
+  
+    color: #6c7289;
+  }
+  
+  .btn {
+    background: #3d8168;
+    border-radius: 0.4rem;
+    margin-top: 1.3rem;
+    padding: 0.75rem 3.15rem 0.75rem 3.15rem;
+    border: none;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .btn:hover {
+    background: #1a4032;
+    cursor: pointer;
+  }
+  
+  .btn-text {
+    /* Button Text */
+  
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.6rem;
+    line-height: 0.85rem;
+    margin-left: 0.58rem;
+    /* identical to box height */
+  
+    /* Pure White */
+  
+    color: #ffffff;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 15rem;
+      padding: 0.5rem;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "leftImage"
+        "rightContent";
+    }
+  
+    .left-image {
+      background-image: url("images/image-product-mobile.jpg");
+      background-repeat: no-repeat;
+      height: 12rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+  
+    .right-content {
+      width: 15rem;
+      padding: 0.8rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+  
+  }
