@@ -1,0 +1,262 @@
+--Mobile version
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 55.5rem;
+}
+
+.image-bg-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50rem;
+}
+
+.image-bg-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.main-text {
+  display: grid;
+  column-gap: 6rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "leftText rightRating";
+  margin-top: 6.35rem;
+  margin-bottom: 3.6rem;
+}
+
+.left-text {
+  grid-area: leftText;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.left-text h1 {
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.37rem;
+  line-height: 2.37rem;
+  margin-bottom: 0.2rem;
+  /* or 100% */
+
+  letter-spacing: -1.71429px;
+
+  color: #512051;
+}
+
+.left-text p {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  margin-top: 0.5rem;
+  /* or 167% */
+
+  letter-spacing: -0.5px;
+
+  color: #927b91;
+}
+
+.right-rating {
+  grid-area: rightRating;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars-1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.stars-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.stars-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.start-N-text {
+  background-color: #f7f2f7;
+  display: flex;
+  align-items: center;
+  padding: 1rem 4.5rem 1rem 1.56rem;
+  border-radius: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.start-N-text img {
+  width: 0.6rem;
+  margin-right: 0.3rem;
+}
+
+.text {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-left: 1.56rem;
+  /* line-height: 0.6rem; */
+  /* identical to box height */
+
+  color: #512051;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 1.2rem;
+  min-height: 13.25rem;
+}
+
+.testi {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.testi-1 {
+  justify-content: flex-start;
+}
+
+.testi-2 {
+  justify-content: center;
+}
+
+.testi-3 {
+  justify-content: flex-end;
+}
+
+.profile {
+  background: #512051;
+  border-radius: 0.4rem;
+  padding: 2rem 1.56rem 2rem 1.56rem;
+}
+
+.profile img {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name {
+  margin-left: 1.15rem;
+  font-family: "League Spartan";
+  font-style: normal;
+
+  font-size: 0.8rem;
+  line-height: 1rem;
+  /* identical to box height */
+}
+
+.name {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.verify {
+  font-weight: 400;
+  color: #ee69a4;
+}
+
+.testimonial-text {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  margin-top: 1.25rem;
+  /* or 169% */
+
+  letter-spacing: -0.232143px;
+
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .main-text {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "leftText"
+      "rightRating";
+  }
+
+  .left-text {
+    width: 18.25rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .left-text h1 {
+    align-items: center;
+  }
+
+  .stars {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 0.3rem;
+    align-items: center;
+    margin-bottom: 0.3rem;
+  }
+
+  .start-N-text {
+    flex-direction: column;
+
+    width: 100%;
+    padding: 0.7rem 0rem 0.7rem 0rem;
+  }
+
+  .start-N-text img {
+    margin-right: 0rem;
+  }
+
+  .text {
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1.2rem;
+
+    width: 100%;
+    /* max-width: 16.31rem; */
+  }
+
+  .testi-3 {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e6eff5;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: grid;
+    min-height: 100%;
+    max-width: 35rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "joincommunity joincommunity"
+      "monthlysub whyus";
+  }
+  
+  .join-community {
+    border-radius: 0.3rem 0.3rem 0 0;
+    background-color: #fff;
+    grid-area: joincommunity;
+    grid-column: 1 / span 2;
+    padding: 2rem;
+  }
+  
+  .join-community h1 {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    /* identical to box height */
+  
+    letter-spacing: -0.3px;
+  
+    color: #2ab3b1;
+  }
+  
+  .thirty-day {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.05rem;
+    margin-top: 1.2rem;
+    /* identical to box height */
+  
+    letter-spacing: -0.225px;
+  
+    color: #c0df33;
+  }
+  
+  .detail {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    /* or 162% */
+  
+    letter-spacing: -0.2px;
+  
+    color: #9aa7be;
+  }
+  
+  .monthly-sub {
+    background-color: #2ab3b1;
+    color: #fff;
+    grid-area: monthlysub;
+    padding: 2rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+  
+  .monthly {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.05rem;
+    /* identical to box height */
+  
+    letter-spacing: -0.225px;
+  
+    color: #ffffff;
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+  
+  .dollar {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.56rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.4px;
+    margin-right: 0.5rem;
+  
+    color: #ffffff;
+  }
+  
+  .month {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+    /* identical to box height, or 162% */
+  
+    letter-spacing: -0.2px;
+  
+    color: #ffffff;
+  
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  
+  .access {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+    margin-top: 0.2rem;
+    /* identical to box height, or 162% */
+  
+    letter-spacing: -0.2px;
+  
+    color: #ffffff;
+  }
+  
+  .sign-up {
+    padding: 0.6rem 4.45rem 0.6rem 4.45rem;
+    background: #c0df33;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 5px;
+    border: none;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    margin-top: 1.25rem;
+    /* identical to box height */
+  
+    letter-spacing: -0.2px;
+  
+    color: #ffffff;
+  }
+  
+  .why-us {
+    background-color: #4bbfbc;
+    color: #fff;
+    grid-area: whyus;
+    padding: 2rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+  
+  .why-us ul li {
+    list-style: none;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    /* or 143% */
+  
+    letter-spacing: -0.175px;
+  
+    color: #ffffff;
+  
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+  
+  .why {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.05rem;
+    margin-bottom: 0.9rem;
+    /* identical to box height */
+  
+    letter-spacing: -0.225px;
+  
+    color: #ffffff;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+        "joincommunity"
+        "monthlysub"
+        "whyus";
+    }
+  
+    .monthly-sub {
+      border-bottom-left-radius: 0rem;
+    }
+  
+    .why-us {
+      border-radius: 0 0 0.3rem 0.3rem;
+    }
+  }
