@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+  }
+  
+  .conatiner {
+    max-width: 55.5rem;
+  }
+  
+  .multi-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin-top: 3.4rem;
+    grid-template-areas:
+      "supervisor teamBuilder calc"
+      "supervisor karma       calc";
+  }
+  
+  .supervisor {
+    grid-area: supervisor;
+    margin: auto 0 auto 0;
+  }
+  
+  .teamBuilder {
+    grid-area: teamBuilder;
+  }
+  
+  .karma {
+    grid-area: karma;
+  }
+  
+  .calc {
+    grid-area: calc;
+    margin: auto 0 auto 0;
+  }
+  
+  .top-text {
+    text-align: center;
+  }
+  
+  .light-top-text,
+  .bold-top-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    /* identical to box height */
+  
+    letter-spacing: 0.25px;
+  }
+  
+  .light-top-text {
+    font-weight: 275;
+    color: #4d4f62;
+  }
+  
+  .bold-top-text {
+    font-weight: 600;
+    text-align: center;
+    color: #4d4f62;
+  }
+  
+  .smaller-light-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    /* or 167% */
+    text-align: center;
+    letter-spacing: 0.104167px;
+    color: #4d4f62;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-top: 0.7rem;
+    max-width: 27rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card {
+    background: #ffffff;
+    box-shadow: 0px 0.5rem 1rem -0.5rem rgba(131, 166, 210, 0.5);
+    border-radius: 0.4rem;
+    padding: 1.56rem;
+    min-height: 12.5rem;
+    width: 17.5rem;
+    position: relative;
+  }
+  
+  .bold-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.04rem;
+    line-height: 1.5rem;
+    /* identical to box height */
+  
+    color: #4d4f62;
+  }
+  
+  .light-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.6rem;
+    line-height: 1.15rem;
+    /* or 177% */
+  
+    letter-spacing: 0.0902778px;
+  
+    color: #4d4f62;
+  
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  
+  .image-icon {
+    position: absolute;
+    bottom: 1.56rem;
+    right: 1.56rem;
+  }
+  
+  .icon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  
+  .supervisor {
+    border-top: 0.2rem solid #00c8c8;
+  }
+  
+  .teamBuilder {
+    border-top: 0.2rem solid #ff637b;
+  }
+  
+  .karma {
+    border-top: 0.2rem solid #fcae4a;
+  }
+  
+  .calc {
+    border-top: 0.2rem solid #377fd2;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .multi-cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      row-gap: 1rem;
+      margin-top: 3.4rem;
+      padding: 0 1.56rem 0 1.56rem;
+  
+      grid-template-areas:
+        "supervisor"
+        "teamBuilder"
+        "karma"
+        "calc";
+    }
+  
+    .card {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .top-text {
+      padding: 0 1.56rem 0 1.56rem;
+    }
+  
+    .light-top-text,
+    .bold-top-text {
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+  
+      letter-spacing: 0.166667px;
+    }
+  }
