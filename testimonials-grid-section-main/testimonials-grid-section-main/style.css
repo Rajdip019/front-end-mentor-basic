@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background: #ecf2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jean   patrick patrick kira";
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  .daniel {
+    grid-area: daniel;
+    background-color: #733fc8;
+  
+  }
+  
+  
+  .jonathan {
+    grid-area: jonathan;
+    background-color: #48556a;
+  }
+  
+  .jean {
+    grid-area: jean;
+    background-color: #fff;
+  }
+  .patrick {
+    grid-area: patrick;
+    background-color: #19202d;
+  }
+  
+  .kira {
+    grid-area: kira;
+    background-color: #fff;
+  }
+  
+  .card {
+    position: relative;
+    border-radius: 0.4rem;
+    padding: 1.25rem 1.7rem 1.25rem 1.7rem;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    
+  }
+  
+  .imageOnTop {
+      position: absolute;
+      z-index: 1;
+      left: 65%;
+      top: 1%;
+      
+  }
+  
+  .imageOnTop img{
+      width: 5.1rem;
+      height: 5.1rem;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .profile-image img {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+  }
+  
+  .testimonial {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  
+  .background-info {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+  
+  .daniel .testimonial,
+  .jonathan .testimonial,
+  .patrick .testimonial {
+    color: #fff;
+    margin-top: 0.9rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .daniel .background-info,
+  .jonathan .background-info,
+  .patrick .background-info {
+    color: #cfcfcf;
+  
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-top: 1rem;
+    
+  }
+  
+  .kira .testimonial,
+  .jean .testimonial {
+    color: #48556a;
+    margin-top: 0.9rem;
+  }
+  
+  .kira .background-info,
+  .jean .background-info {
+    color: #48556a;
+  
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-top: 3rem;
+    
+  }
+  
+  .daniel .name,
+  .jonathan .name,
+  .patrick .name {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+  
+    color: #ffffff;
+  }
+  
+  .daniel .verified,
+  .jonathan .verified,
+  .patrick .verified {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  
+    color: #ffffff;
+  
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  
+  .kira .name,
+  .jean .name {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+  
+    color: #48556a;
+  }
+  
+  .kira .verified,
+  .jean .verified {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  
+    color: #48556a;
+  
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  
+  
+  @media only screen and (max-width: 850px){
+      .container {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(5, auto);
+          grid-template-areas:
+            "daniel"
+            "jonathan"
+            "jean"
+            "patrick"
+            "kira";
+          row-gap: 1rem;
+        }
+  
+        body{
+            max-width: 80%;
+        }
+        
+        .kira .background-info,
+  .jean .background-info {
+    margin-top: 1.5rem;
+    
+  }
+  
+  .profile-info {
+      z-index: 2;
+      position: relative;
+    }
+  
+  .daniel .testimonial,
+  .jonathan .testimonial,
+  .patrick .testimonial {
+    
+    position: relative;
+    z-index: 2;
+  }
+  
+  .imageOnTop {
+      position: absolute;
+      z-index: 1;
+      left: 60%;
+      top: 1%;
+      
+  }
+  
+  .imageOnTop img{
+      width: 5rem;
+      height: 5rem;
+  }
+  }
